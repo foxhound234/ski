@@ -27,11 +27,11 @@
                                     for(j=0;j<lesOuvertures.size();j++)
                                     {
                                         Ouverture uneOuverture = (Ouverture)lesOuvertures.get(j);
-                                        if (unEnneigement.getLaStation().getCode()==uneOuverture.getLaPiste().getCodeStation())
+                                        if (unEnneigement.getLaStation().getCode()==uneOuverture.getLaPiste().getCodestation())
                                         {
-                                            tabHTML += "<tr><td>" + uneOuverture.getLaPiste().getCodePiste()  + "</td>";
-                                            tabHTML += "<td>" + uneOuverture.getLaPiste().getNomPiste() + "</td>";
-                                            tabHTML += "<td>" + uneOuverture.getOuvert() + "</td></tr>";
+                                            tabHTML += "<tr><td>" + uneOuverture.getLaPiste().getCodepiste()+ "</td>";
+                                            tabHTML += "<td>" + uneOuverture.getLaPiste().getNompiste()+ "</td>";
+                                            tabHTML += "<td>" + uneOuverture.getOuverture()+ "</td></tr>";
                                         }
                                     }
                                     tabHTML += "</table>";

@@ -67,5 +67,14 @@ public class GestionStation
             return null;
 	}
    }
-   
+   public ArrayList getEnneigement()
+   {
+       try
+       {
+         ResultSet rs = stmt.executeQuery("select jour,CODESTATION, capacitestation, codepostal,"
+                    + " complementadresse, commentaire, image from station");
+         
+                     
+       }
+   }
 }
