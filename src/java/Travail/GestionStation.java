@@ -67,17 +67,23 @@ public class GestionStation
             return null;
 	}
    }
-   public ArrayList getEnneigement()
+   public ArrayList getEnneigement() throws SQLException
    {
+     ArrayList listeRetour = new ArrayList();
        try
        {
          ResultSet rs = stmt.executeQuery("SELECT JOUR, station.CODESTATION, BASPISTE, HAUTPISTE,station.NOMSTATION,station.CAPACITESTATION,station.CODEPOSTAL,\n" +
-                                            "station.COMPLEMENTADRESSE,station.COMMENTAIRE,station.image\n" +
-                                                "FROM enneig, station \n" +
-                                                    "WHERE\n" +
-                                               "enneig.CODESTATION=station.CODESTATION" );
+                                            "station.COMPLEMENTADRESSE,station.COMMENTAIRE,station.image" +
+                                             "FROM enneig, station" +
+                                                  "WHERE enneig.CODESTATION=station.CODESTATION");
          
                      
        }
+       	catch (SQLException sqle)
+   	{
+            System.out.println("Erreur requete getStation : " + sqle.getMessage());
+            return null;
+	}
+       return  listeRetour;
    }
 }
