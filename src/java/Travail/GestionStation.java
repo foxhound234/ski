@@ -71,8 +71,11 @@ public class GestionStation
    {
        try
        {
-         ResultSet rs = stmt.executeQuery("select jour,CODESTATION, capacitestation, codepostal,"
-                    + " complementadresse, commentaire, image from station");
+         ResultSet rs = stmt.executeQuery("SELECT JOUR, station.CODESTATION, BASPISTE, HAUTPISTE,station.NOMSTATION,station.CAPACITESTATION,station.CODEPOSTAL,\n" +
+                                            "station.COMPLEMENTADRESSE,station.COMMENTAIRE,station.image\n" +
+                                                "FROM enneig, station \n" +
+                                                    "WHERE\n" +
+                                               "enneig.CODESTATION=station.CODESTATION" );
          
                      
        }
