@@ -1,0 +1,79 @@
+/* 
+    Document   : styles
+    Created on : 19 déc. 2012, 11:37:57
+    Author     : Administrateur
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body
+{ 
+    background-color: #CCFFFF;
+}
+.titre
+{
+    font-size: xx-large;
+    text-align: left;
+}
+.stitre
+{
+    font-size: large;
+}
+.texteLong
+{
+    text-align: justify;
+    font-size: x-large;
+}
+#entete
+{
+    text-align: center;
+}
+#partie_gauche
+{
+    position: absolute;
+    top: 32%;
+    height: 58%;
+    width:55%;
+}
+#partie_droite
+{
+    position: absolute;
+    top: 32%;
+    left: 56%;
+    width:42%;
+    height: 58%;
+    color : blue;
+    text-align:justify;
+}
+/*Mise en forme de tableau dans la div corps*/
+#corps.table
+{
+	/*border: medium solid #9AA65F;
+	border-collapse: collapse;*/
+	width: 100%;
+	margin : auto; /*pour centrer horizontalement*/
+}
+
+th
+{
+	font-family: monospace;
+	/*border: thin solid #9AA65F;*/
+	width: 50%;
+	padding: 5px;
+	background-color: #00AFFF;
+	/*background-image: url(sky.jpg);*/
+}
+td
+{
+	font-family: sans-serif;
+	/*border: thin solid #9AA65F;*/
+	width: 50%;
+	padding: 5px;
+	/*text-align: center;*/
+	background-color: #ffffff;
+}
+caption
+{
+	font-family: sans-serif;
+	font-size : 36px;
+}

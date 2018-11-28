@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" title="Design" href="styles.css" />
+        <title>Vive les sports d'hiver</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        
+        <script>
+            function afficheOuvertures(tableauHTML) //Utile pour l'affichage des ouvertures (choix 4)
+            {
+                var tab = document.getElementById('ouvertures');
+                tab.innerHTML = tableauHTML;
+            } 
+        </script>
+    </head>
+    <body>
+        <div id="entete">
+            <span class="titre">Bienvenue dans les stations des Pyrénées</span>
+        <br/>
+            <span class="stitre">choisissez...
+            <br/>
+            <a href="ControleurSki?choix=1">Stations...</a><br/>
+            <a href="ControleurSki?choix=3">Enneigement...</a><br/>
+            <a href="ControleurSki?choix=4">Ouverture...</a><br/>
+            </span>
+        <hr>
+        </div>
